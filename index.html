@@ -14,9 +14,9 @@
       <aside class="aside">
         <nav class="aside-navbar">
           <div class="themes-container">
-            <p class="aside-title">CONTENIDO</p>
+            <p class="aside-title">Variantes del proyecto</p>
             <ul class="theme-list">
-              <li><a href="#">Nemium A</a></li>
+              <li><a class="active" href="#">Nemium A</a></li>
               <li><a href="#">Nemium B</a></li>
               <li><a href="#">Nemium C</a></li>
               <li><a href="#">Nemium D</a></li>
@@ -28,22 +28,22 @@
           <details class="dropdown">
             <summary>Setup</summary>
             <ol>
-              <li><a href="#">Google Chrome</a></li>
-              <li><a href="#">Visual Studio Code</a></li>
-              <li><a href="#">Figma</a></li>
-              <li><a href="#">GitHub</a></li>
+              <li><a href="#chrome">Google Chrome</a></li>
+              <li><a href="#vs-code">Visual Studio Code</a></li>
+              <li><a href="#figma">Figma</a></li>
+              <li><a href="#github">GitHub</a></li>
             </ol>
           </details>
 
           <details class="dropdown" open>
             <summary>Conceptos esenciales del Desarrollo Web</summary>
             <ol>
-              <li><a href="#">Qué es HTML</a></li>
-              <li><a href="#">Etiquetas</a></li>
-              <li><a href="#">DOM</a></li>
-              <li><a href="#">Semántica</a></li>
-              <li><a href="#">Atributos</a></li>
-              <li><a href="#">Qué es CSS</a></li>
+              <li><a href="#html">Qué es HTML</a></li>
+              <li><a href="#tags">Etiquetas</a></li>
+              <li><a href="#dom">DOM</a></li>
+              <li><a href="#semantic">Semántica</a></li>
+              <li><a href="#attributes">Atributos</a></li>
+              <li><a href="#css">Qué es CSS</a></li>
             </ol>
           </details>
         </nav>
@@ -62,7 +62,11 @@
         <section>
           <h2>Setup</h2>
 
-          <img src="./assets/images/chrome-black.png" alt="Chrome Logo" />
+          <img
+            id="chrome"
+            src="./assets/images/chrome-black.png"
+            alt="Chrome Logo"
+          />
           <h3>1. Google Chrome</h3>
           <p>
             Chrome va a ser el
@@ -72,6 +76,7 @@
           </p>
 
           <img
+            id="vs-code"
             src="./assets/images/vs-code-black.png"
             alt="Visual Studio Code Logo"
           />
@@ -88,7 +93,11 @@
             el lenguaje en el que se desemvuelva.
           </p>
 
-          <img src="./assets/images/figma-black.png" alt="Figma Logo" />
+          <img
+            id="figma"
+            src="./assets/images/figma-black.png"
+            alt="Figma Logo"
+          />
           <h3>3. Figma</h3>
           <p>
             Figma es una la herramienta más popular en la actualidad para
@@ -97,7 +106,11 @@
             navegador.
           </p>
 
-          <img src="./assets/images/github-black.png" alt="Github Logo" />
+          <img
+            id="github"
+            src="./assets/images/github-black.png"
+            alt="Github Logo"
+          />
           <h3>4. GitHub</h3>
           <p>
             Así como en Facebook te encuentran tus amigos, en Github
@@ -117,7 +130,7 @@
 
         <section>
           <h2>Conceptos esenciales del Desarrollo Web</h2>
-          <h3>1. Qué es HTML</h3>
+          <h3 id="html">1. Qué es HTML</h3>
           <p>
             Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
             componente más básico de la web. Define el significado y la
@@ -138,7 +151,7 @@
 </pre
           >
 
-          <h3>2. Etiquetas</h3>
+          <h3 id="tags">2. Etiquetas</h3>
           <p>
             Las etiquetas HTML van a ayudarnos a brindar una estructura y
             semántica al contenido de nuestro website y cada una tiene
@@ -153,7 +166,7 @@
             día a día como Software Developer.
           </p>
 
-          <h3>3. DOM</h3>
+          <h3 id="dom">3. DOM</h3>
           <p>
             El Document Object Model es una estructura de árbol que representará
             todos nuestros proyectos web como si un árbol genealógico fuera:
@@ -163,7 +176,7 @@
           </p>
           <img width="100%" src="./assets/images/dom-black.jpg" alt="DOM" />
 
-          <h3>4. Semántica</h3>
+          <h3 id="semantic">4. Semántica</h3>
           <p>
             La semántica le brinda sentido a cada elemento existen en un sitio
             web, algunos elementos será meramente decorativos y no deben
@@ -177,7 +190,7 @@
             contenido.
           </p>
 
-          <h3>5. Atributos</h3>
+          <h3 id="attributes">5. Atributos</h3>
           <p>
             Los atributos le dan características extra a las etiquetas para
             complementar información y son pre programadas por el navegador,
@@ -186,7 +199,7 @@
             como src
           </p>
 
-          <h3>6. CSS</h3>
+          <h3 id="css">6. CSS</h3>
           <p>
             Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS
             es el lenguaje de estilos utilizado para describir la presentación
@@ -195,7 +208,7 @@
           <img width="100%" src="./assets/images/css-black.jpg" alt="CSS" />
         </section>
 
-        <section>
+        <section class="box-model-section">
           <h2>Modelo de caja</h2>
           <h3>El modelo de caja está compuesto por:</h3>
           <p>
@@ -245,30 +258,44 @@
           <h2>Modelo de caja</h2>
           <p>
             Si tienes alguna pregunta escríbeme a
-            <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+            <a class="email-link" href="mailto:me@leonidasesteban.com"
+              >me@leonidasesteban.com</a
+            >
           </p>
 
-          <form>
-            <h3>Suscríbete a nuestro newsletter</h3>
-            <input name="fullname" type="text" placeholder="Nombre" />
-            <input name="email" type="email" placeholder="Correo electrónico" />
-            <input type="submit" value="Suscribirme" />
+          <form id="form" class="form" action="#form" method="GET">
+            <h3 class="form__title">Suscríbete a nuestro newsletter</h3>
+            <input
+              class="form__input"
+              name="fullname"
+              type="text"
+              placeholder="Nombre"
+              required
+            />
+            <input
+              class="form__input"
+              name="email"
+              type="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <input class="btn" type="submit" value="Suscribirme" />
           </form>
         </section>
       </main>
     </div>
 
-    <footer>
-      <p>&copy; Leonidas Esteban 2021</p>
-      <div>
+    <footer class="footer">
+      <p class="footer__title">&copy; Leonidas Esteban 2021</p>
+      <div class="footer__links">
         <a href="#"
-          ><img src="./assets/icons/facebook-black.svg" alt="facebook logo"
+          ><img src="./assets/icons/facebook.svg" alt="facebook logo"
         /></a>
         <a href="#"
-          ><img src="./assets/icons/instagram-black.svg" alt="instagram logo"
+          ><img src="./assets/icons/instagram.svg" alt="instagram logo"
         /></a>
         <a href="#"
-          ><img src="./assets/icons/twitter-black.svg" alt="twitter logo"
+          ><img src="./assets/icons/twitter.svg" alt="twitter logo"
         /></a>
       </div>
     </footer>
